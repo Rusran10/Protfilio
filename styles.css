@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #e9fbe5, #ffffff);
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background: #e6ffe6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006600;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+    color: #00aa00;
+    font-weight: 700;
+}
+
+#google_translate_element {
+    font-size: 0.9rem;
+    color: #666;
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#google_translate_element select {
+    background-color: #10c21e;
+    border: 1px solid #aaffaa;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #004d00;
+    font-size: 0.9rem;
+}
+
+#google_translate_element select:hover {
+    border-color: #00aa00;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+    background: #f5fff5;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text span {
+    color: #009900;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-text button {
+    padding: 0.8rem 2rem;
+    background: #009900;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-text button:hover {
+    background: #007700;
+}
+
+.hero-text button a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image img {
+    max-width: 320px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 8px;
+    background: conic-gradient(from 0deg, #00ff99, #009900, #00ccff, #ffcc00, #00ff99);
+    border: 6px solid #1aaf27;
+    box-shadow: 0 0 32px 4px #00ccff44, 0 0 0 8px #fff inset;
+    transition: transform 1s ease-in-out, box-shadow 0.4s;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-image img:hover {
+    transform: rotateY(10deg) scale(1.08);
+    box-shadow: 0 0 40px 8px #00ccff88, 0 0 0 8px #fff inset;
+}
+
+.hero-image img:hover {
+    transform: rotateY(10deg) scale(1.05);
+}
+
+.hero-image img:active {
+    transform: rotateY(0deg) scale(1);
+}
+
+.social-buttons.hero-social {
+    margin-top: 2rem;
+}
+
+.social-buttons a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #3b5998;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.social-buttons a.instagram {
+    background-color: #e4405f;
+}
+
+section {
+    padding: 4rem 10%;
+    background: #ffffff;
+    animation: fadeUp 1s ease;
+}
+
+h2 {
+    color: #006600;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.skills-container,
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-box,
+.project-box {
+    background-color: #e6ffe6;
+    border: 1px solid #aaffaa;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: #004d00;
+    font-weight: 500;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    width: calc(50% - 1rem);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 0.8rem 2rem;
+    background-color: #009900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #007700;
+}
+
+.phone-number {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #004d00;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
